@@ -2,12 +2,22 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
     <script src="index.js"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-  <!-- <div class="d-flex flex-row"> -->
-    <textarea id="TXTAREA" oninput="myInputEvent()"></textarea>
+  <div class="d-flex flex-row">
     <main></main>
-  <!-- </div> -->
+    <div>
+      <input type="text" value="p1.jpg" oninput="myInputEvent()" id="pgName">BG Page</input><br>
+      <input type="number" value="235" oninput="myInputEvent()" id="startX">startX</input><br>
+      <input type="number" value="433" oninput="myInputEvent()" id="startY">startY</input><br>
+      <input type="number" value="7" oninput="myInputEvent()" id="charSpacing">charSpacing</input><br>
+      <input type="number" value="30" oninput="myInputEvent()" id="wordSpacing">wordSpacing</input><br>
+      <input type="number" value="104.8" oninput="myInputEvent()" id="lineHt">LineHt</input><br>
+      <input type="number" value="1" oninput="myInputEvent()" id="fontSize">fontSize</input><br>
+      input : <textarea id="TXTAREA" oninput="myInputEvent()" cols="90" rows="30"></textarea><br>
+      <button onclick="save('output.jpg')">Download</button>
+    </div>
+  </div>
   </body>
 </html>
